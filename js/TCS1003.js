@@ -11,16 +11,16 @@ const MAX_CLEAR_USES = 1; // Cambia a 2 o 3 si deseas permitir más usos
 const CLEAR_INTERVAL_DAYS = 1; // Tiempo en días de espera para poder borrar los datos
 
 const MAX_ATTEMPTS = 10; // Intentos
-const UNIQUE_QUESTIONS_COUNT = 23; // Selección única
-const DEVELOPMENT_QUESTIONS_COUNT = 8; // Desarrollo
-const PRACTICE_QUESTIONS_PAREO = 10; // Pareo
-const PRACTICE_QUESTIONS_SOUP = 10; // SOUP
-const ACCESS_CODE = "3"; // 12345 Código que se valida en script.js
+const UNIQUE_QUESTIONS_COUNT = 23; // 23 Selección única
+const DEVELOPMENT_QUESTIONS_COUNT = 8; // 8 Desarrollo
+const PRACTICE_QUESTIONS_PAREO = 10; // 10 Pareo
+const PRACTICE_QUESTIONS_SOUP = 10; // 10 SOUP
+const ACCESS_CODE = "2"; // 12345 Código que se valida en script.js
 /////////////////////////////////
 
 //////////////////////////////////
 //VerificaCambioDeCodigo.js
-/////////////////////////////////
+//////////////////////////
 (function () {
     const examData = JSON.parse(localStorage.getItem(EXAM_STORAGE_KEY));
     if (examData?.accessCode && examData.accessCode !== ACCESS_CODE) {
@@ -1273,15 +1273,15 @@ const preguntasDesarrolloCompletas = [
     "Explica con tus palabras qué es un driver y por qué es esencial para el funcionamiento de una computadora. Menciona dos consecuencias de no tenerlos actualizados. (3pts)",
     "Menciona y describe tres tipos de drivers, dando un ejemplo concreto de cada uno. (3pts)",
     "Explica tres problemas que pueden surgir por no actualizar los drivers de una computadora y como afectan al usuario. (3pts)",
-    "Detalla el proceso para instalar un driver en Windows desde tres fuentes diferentes (sitio web oficial, Windows Update, y disco/USB del fabricante)",
-    "¿Por qué es importante mantener el software y los drivers actualizados en términos de seguridad informática? Da dos ejemplos de amenazas que pueden evitarse.",
-    "Define malware y menciona cuatro tipos distintos, explicando brevemente cómo afecta cada uno al usuario o sistema.",
-    "Enumera tres medidas de seguridad que tomarías antes de abrir archivos de un USB desconocido.",
-    "Explica qué es el phishing y menciona tres señales para identificar un correo sospechoso.",
-    "Describe el papel del firewall en la seguridad informática y de un ejemplo de cómo protege una red doméstica en la actualidad.",
-    "¿Qué es una pantalla azul de la muerte (BSOD) y cómo puede estar relacionada con los drivers? Explica dos causas posibles.",
-    "Menciona por qué debemos protegernos como usuarios de las amenazas de malware, y cuales serían 3 tipos de soluciones.",
-    "Como usuario, como puedo configurar mi navegador web, para que sea más seguro y evitar que violen mi privacidad.",
+    "Detalla el proceso para instalar un driver en Windows desde tres fuentes diferentes (sitio web oficial, Windows Update, y disco/USB del fabricante) (3pts)",
+    "¿Por qué es importante mantener el software y los drivers actualizados en términos de seguridad informática? Da dos ejemplos de amenazas que pueden evitarse. (3pts)",
+    "Define malware y menciona cuatro tipos distintos, explicando brevemente cómo afecta cada uno al usuario o sistema. (3pts)",
+    "Enumera tres medidas de seguridad que tomarías antes de abrir archivos de un USB desconocido. (3pts)",
+    "Explica qué es el phishing y menciona tres señales para identificar un correo sospechoso. (3pts)",
+    "Describe el papel del firewall en la seguridad informática y de un ejemplo de cómo protege una red doméstica en la actualidad. (3pts)",
+    "¿Qué es una pantalla azul de la muerte (BSOD) y cómo puede estar relacionada con los drivers? Explica dos causas posibles. (3pts)",
+    "Menciona por qué debemos protegernos como usuarios de las amenazas de malware, y cuales serían 3 tipos de soluciones. (3pts)",
+    "Como usuario, como puedo configurar mi navegador web, para que sea más seguro y evitar que violen mi privacidad. (3pts)",
 ];
 
 // Función para seleccionar preguntas únicas aleatorias 
@@ -1786,400 +1786,400 @@ const uniqueQuestions = [
     {
         question: "¿Cuál es la función de un controlador (driver) en un sistema informático? (2 pts)",
         options: [
-            "( a ) 	Mejorar la velocidad de internet.",
-            "( b ) 	Permitir que el hardware y el software interactúen correctamente.",
-            "( c ) 	Proteger la computadora contra virus.",
-            "( d ) 	Crear archivos de texto."
+            "Mejorar la velocidad de internet.",
+            "Permitir que el hardware y el software interactúen correctamente.",
+            "Proteger la computadora contra virus.",
+            "Crear archivos de texto."
         ],
         correct: "Permitir que el hardware y el software interactúen correctamente."
     },
     {
         question: "¿Si tu impresora no responde al intentar imprimir, ¿cuál podría ser una causa relacionada con los drivers? (2 pts)",
         options: [
-            "( a ) 	El documento es demasiado grande.",
-            "( b ) 	El driver de la impresora está ausente o dañado.",
-            "( c ) 	El monitor está apagado.",
-            "( d ) 	El mouse está desconectado."
+            "El documento es demasiado grande.",
+            "El driver de la impresora está ausente o dañado.",
+            "El monitor está apagado.",
+            "El mouse está desconectado."
         ],
         correct: "El driver de la impresora está ausente o dañado."
     },
     {
         question: "¿Qué sucede si instalas un driver equivocado para tu tarjeta de video? (2 pts)",
         options: [
-            "( a ) 	El sistema operativo se actualiza automáticamente.",
-            "( b ) 	Puede haber errores gráficos o fallos del sistema.",
-            "( c ) 	El equipo lo busca y como no lo encuentra lo desactiva para mejorar su rendimiento.",
-            "( d ) 	El antivirus se desactiva."
+            "El sistema operativo se actualiza automáticamente.",
+            "Puede haber errores gráficos o fallos del sistema.",
+            "El equipo lo busca y como no lo encuentra lo desactiva para mejorar su rendimiento.",
+            "El antivirus se desactiva."
         ],
         correct: "Puede haber errores gráficos o fallos del sistema."
     },
     {
         question: "¿Cuál de los siguientes dispositivos requiere instalación de drivers que no sean genéricos para funcionar plenamente? (2 pts)",
         options: [
-            "( a ) 	Ratón USB.",
-            "( b ) 	Monitor estándar.",
-            "( c ) 	Teclado mecánico básico.",
-            "( d ) 	Tarjeta de sonido dedicada."
+            "Ratón USB.",
+            "Monitor estándar.",
+            "Teclado mecánico básico.",
+            "Tarjeta de sonido dedicada."
         ],
         correct: "Tarjeta de sonido dedicada."
     },
     {
         question: "¿Qué es un driver oficial? (2 pts)",
         options: [
-            "( a ) 	Un controlador desarrollado por el fabricante del hardware.",
-            "( b ) 	Un programa hecho por usuarios.",
-            "( c ) 	Un software que viene en CD pirata.",
-            "( d ) 	Un antivirus gratuito."
+            "Un controlador desarrollado por el fabricante del hardware.",
+            "Un programa hecho por usuarios.",
+            "Un software que viene en CD pirata.",
+            "Un antivirus gratuito."
         ],
         correct: "Un controlador desarrollado por el fabricante del hardware."
     },
     {
         question: "¿Cuál es una característica de los drivers genéricos? (2 pts)",
         options: [
-            "( a ) 	Son exclusivos para un solo modelo.",
-            "( b ) 	Funcionan con varios dispositivos similares, pero no siempre aprovechan todas las funciones.",
-            "( c ) 	Son siempre más rápidos.",
-            "( d ) 	Vienen preinstalados en el hardware."
+            "Son exclusivos para un solo modelo.",
+            "Funcionan con varios dispositivos similares, pero no siempre aprovechan todas las funciones.",
+            "Son siempre más rápidos.",
+            "Vienen preinstalados en el hardware."
         ],
         correct: "Funcionan con varios dispositivos similares, pero no siempre aprovechan todas las funciones."
     },
     {
         question: "¿Qué herramienta de Windows permite desinstalar un driver defectuoso? (2 pts)",
         options: [
-            "( a ) 	Panel de control de energía.",
-            "( b ) 	Administrador de dispositivos.",
-            "( c ) 	Paint.",
-            "( d ) 	Calculadora."
+            "Panel de control de energía.",
+            "Administrador de dispositivos.",
+            "Paint.",
+            "Calculadora."
         ],
         correct: "Administrador de dispositivos."
     },
     {
         question: "¿Qué puede pasar si dos drivers intentan controlar el mismo recurso de hardware? (2 pts)",
         options: [
-            "( a ) 	El equipo será menos rápido.",
-            "( b ) 	Puede haber conflictos y fallos del sistema.",
-            "( c ) 	Se instalarán más programas.",
-            "( d ) 	El antivirus se acivará y no se actualizará."
+            "El equipo será menos rápido.",
+            "Puede haber conflictos y fallos del sistema.",
+            "Se instalarán más programas.",
+            "El antivirus se acivará y no se actualizará."
         ],
         correct: "Puede haber conflictos y fallos del sistema."
     },
     {
         question: "¿Cuál es una forma común de instalar drivers en Windows? (2 pts)",
         options: [
-            "( a ) 	Por correo electrónico.",
-            "( b ) 	Al conectar el dispositivo, Windows busca e instala el driver automáticamente.",
-            "( c ) 	Usando un navegador web.",
-            "( d ) 	A través del BIOS."
+            "Por correo electrónico.",
+            "Al conectar el dispositivo, Windows busca e instala el driver automáticamente.",
+            "Usando un navegador web.",
+            "A través del BIOS."
         ],
         correct: "Al conectar el dispositivo, Windows busca e instala el driver automáticamente."
     },
     {
         question: "¿Qué es el malware? (2 pts)",
         options: [
-            "( a ) 	Un programa que daña o roba información.",
-            "( b ) 	Un tipo de hardware mailicioso.",
-            "( c ) 	Un driver de impresora dañado.",
-            "( d ) 	Un firewall mal configurado."
+            "Un programa que daña o roba información.",
+            "Un tipo de hardware mailicioso.",
+            "Un driver de impresora dañado.",
+            "Un firewall mal configurado."
         ],
         correct: "Un programa que daña o roba información."
     },
     {
         question: "¿Cuál es una buena práctica al instalar software descargado de internet? (2 pts)",
         options: [
-            "( a ) 	Instalar cualquier archivo sin revisar su origen.",
-            "( b ) 	Descargar solo desde sitios oficiales o confiables.",
-            "( c ) 	Instalar programas sin antivirus.",
-            "( d ) 	Descargar solo archivos pequeños."
+            "Instalar cualquier archivo sin revisar su origen.",
+            "Descargar solo desde sitios oficiales o confiables.",
+            "Instalar programas sin antivirus.",
+            "Descargar solo archivos pequeños."
         ],
         correct: "Descargar solo desde sitios oficiales o confiables."
     },
     {
         question: "¿Qué técnica usan los ciberdelincuentes para engañar a los usuarios y obtener información personal? (2 pts)",
         options: [
-            "( a ) 	Phishing",
-            "( b ) 	un Firewall",
-            "( c ) 	Los backup",
-            "( d ) 	La fragmentación de disco"
+            "Phishing",
+            "un Firewall",
+            "Los backup",
+            "La fragmentación de disco"
         ],
         correct: "Phishing"
     },
     {
         question: "¿Cuál es la función principal de un firewall? (2 pts)",
         options: [
-            "( a ) 	Bloquear accesos no autorizados a la red o sistema.",
-            "( b ) 	Mejorar la velocidad de la computadora.",
-            "( c ) 	Instalar drivers.",
-            "( d ) 	Crear documentos."
+            "Bloquear accesos no autorizados a la red o sistema.",
+            "Mejorar la velocidad de la computadora.",
+            "Instalar drivers.",
+            "Crear documentos."
         ],
         correct: "Bloquear accesos no autorizados a la red o sistema."
     },
     {
         question: "¿Por qué es riesgoso usar la misma contraseña en varios servicios? (2 pts)",
         options: [
-            "( a ) 	Porque es difícil de recordar.",
-            "( b ) 	Si una contraseña es robada, todas las cuentas pueden ser vulneradas.",
-            "( c ) 	Mejora la seguridad.",
-            "( d ) 	Facilita el acceso."
+            "Porque es difícil de recordar.",
+            "Si una contraseña es robada, todas las cuentas pueden ser vulneradas.",
+            "Mejora la seguridad.",
+            "Facilita el acceso."
         ],
         correct: "Si una contraseña es robada, todas las cuentas pueden ser vulneradas."
     },
     {
         question: "¿Qué sistema de autenticación es más seguro? (2 pts)",
         options: [
-            "( a ) 	Solo contraseña",
-            "( b ) 	Doble factor de autenticación (2FA)",
-            "( c ) 	Contraseña simple",
-            "( d ) 	Fecha de nacimiento"
+            "Solo contraseña",
+            "Doble factor de autenticación (2FA)",
+            "Contraseña simple",
+            "Fecha de nacimiento"
         ],
         correct: "Doble factor de autenticación (2FA)"
     },
     {
         question: "¿Por qué no es recomendable conectar USB desconocidos a la computadora? (2 pts)",
         options: [
-            "( a ) 	Pueden contener malware.",
-            "( b ) 	Mejoran el rendimiento.",
-            "( c ) 	No presentan ningún riesgo.",
-            "( d ) 	Aumentan la memoria RAM."
+            "Pueden contener malware.",
+            "Mejoran el rendimiento.",
+            "No presentan ningún riesgo.",
+            "Aumentan la memoria RAM."
         ],
         correct: "Pueden contener malware."
     },
     {
         question: "¿Cuál es la función de un antivirus? (2 pts)",
         options: [
-            "( a ) 	Detectar y eliminar software malicioso.",
-            "( b ) 	Instalar drivers.",
-            "( c ) 	Mejorar la velocidad de internet.",
-            "( d ) 	Crear copias de seguridad."
+            "Detectar y eliminar software malicioso.",
+            "Instalar drivers.",
+            "Mejorar la velocidad de internet.",
+            "Crear copias de seguridad."
         ],
         correct: "Detectar y eliminar software malicioso."
     },
     {
         question: "¿Qué es un spyware? (2 pts)",
         options: [
-            "( a ) 	Un programa que recopila información sin permiso.",
-            "( b ) 	Un driver de sonido.",
-            "( c ) 	Un firewall.",
-            "( d ) 	Un tipo de hardware."
+            "Un programa que recopila información sin permiso.",
+            "Un driver de sonido.",
+            "Un firewall.",
+            "Un tipo de hardware."
         ],
         correct: "Un programa que recopila información sin permiso."
     },
     {
         question: "¿Cuál de las siguientes es una contraseña segura? (2 pts)",
         options: [
-            "( a ) 	123456",
-            "( b ) 	MiNombre2024",
-            "( c ) 	!Qw3rT$9pL##",
-            "( d ) 	Fecha de nacimiento"
+            "123456",
+            "MiNombre2024",
+            "!Qw3rT$9pL##",
+            "Fecha de nacimiento"
         ],
         correct: "!Qw3rT$9pL##"
     },
     {
         question: "¿Qué puede provocar un driver corrupto? (2 pts)",
         options: [
-            "( a ) 	Mejorar el rendimiento.",
-            "( b ) 	Pantallas azules y errores del sistema.",
-            "( c ) 	Instalar programas nuevos.",
-            "( d ) 	Aumentar la memoria RAM."
+            "Mejorar el rendimiento.",
+            "Pantallas azules y errores del sistema.",
+            "Instalar programas nuevos.",
+            "Aumentar la memoria RAM."
         ],
         correct: "Pantallas azules y errores del sistema."
     },
     {
         question: "¿Para qué sirve el Administrador de dispositivos en Windows? (2 pts)",
         options: [
-            "( a ) 	Gestionar hardware y drivers instalados.",
-            "( b ) 	Escribir textos.",
-            "( c ) 	Navegar por internet.",
-            "( d ) 	Proteger contra virus."
+            "Gestionar hardware y drivers instalados.",
+            "Escribir textos.",
+            "Navegar por internet.",
+            "Proteger contra virus."
         ],
         correct: "Gestionar hardware y drivers instalados."
     },
     {
         question: "¿Qué es un driver genérico? (2 pts)",
         options: [
-            "( a ) 	Un controlador que puede funcionar con varios dispositivos, pero no es específico.",
-            "( b ) 	Un virus.",
-            "( c ) 	Un firewall.",
-            "( d ) 	Un controlador legitimo pero encontrado en Internet."
+            "Un controlador que puede funcionar con varios dispositivos, pero no es específico.",
+            "Un virus.",
+            "Un firewall.",
+            "Un controlador legitimo pero encontrado en Internet."
         ],
         correct: "Un controlador que puede funcionar con varios dispositivos, pero no es específico."
     },
     {
         question: "¿Qué sucede si instalas un driver incompatible con tu sistema operativo? (2 pts)",
         options: [
-            "( a ) 	El equipo funcionará igual.",
-            "( b ) 	Puede dejar de funcionar el dispositivo o causar errores.",
-            "( c ) 	Mejorará la seguridad.",
-            "( d ) 	El antivirus se actualizará."
+            "El equipo funcionará igual.",
+            "Puede dejar de funcionar el dispositivo o causar errores.",
+            "Mejorará la seguridad.",
+            "El antivirus se actualizará."
         ],
         correct: "Puede dejar de funcionar el dispositivo o causar errores."
     },
     {
         question: "¿Qué es un driver oficial? (2 pts)",
         options: [
-            "( a ) 	El que proviene del fabricante del hardware.",
-            "( b ) 	Un programa hecho por terceros.",
-            "( c ) 	Un software de seguridad.",
-            "( d ) 	Un editor de texto."
+            "El que proviene del fabricante del hardware.",
+            "Un programa hecho por terceros.",
+            "Un software de seguridad.",
+            "Un editor de texto."
         ],
         correct: "El que proviene del fabricante del hardware."
     },
     {
         question: "¿Cuál de los siguientes NO es un tipo de malware? (2 pts)",
         options: [
-            "( a ) 	Ransomware",
-            "( b ) 	Firewall",
-            "( c ) 	Virus",
-            "( d ) 	Troyano"
+            "Ransomware",
+            "Firewall",
+            "Virus",
+            "Troyano"
         ],
         correct: "Firewall"
     },
     {
         question: "¿Qué es un troyano? (2 pts)",
         options: [
-            "( a ) 	Un malware que se oculta como software legítimo.",
-            "( b ) 	Un driver de video desconocido.",
-            "( c ) 	Un firewall mal configurado.",
-            "( d ) 	Un navegador web que se hace pasar por uno."
+            "Un malware que se oculta como software legítimo.",
+            "Un driver de video desconocido.",
+            "Un firewall mal configurado.",
+            "Un navegador web que se hace pasar por uno."
         ],
         correct: "Un malware que se oculta como software legítimo."
     },
     {
         question: "¿Qué hace el ransomware? (2 pts)",
         options: [
-            "( a ) 	Cifra archivos y exige un pago para liberarlos.",
-            "( b ) 	Mejora el rendimiento del equipo.",
-            "( c ) 	Instala drivers maliciosos.",
-            "( d ) 	Es un tipo de firewall."
+            "Cifra archivos y exige un pago para liberarlos.",
+            "Mejora el rendimiento del equipo.",
+            "Instala drivers maliciosos.",
+            "Es un tipo de firewall."
         ],
         correct: "Cifra archivos y exige un pago para liberarlos."
     },
     {
         question: "¿Cuál es la función del BIOS o firmware? (2 pts)",
         options: [
-            "( a ) 	Inicializar el hardware antes de cargar el sistema operativo.",
-            "( b ) 	Instalar programas.",
-            "( c ) 	Crear documentos.",
-            "( d ) 	Navegar en internet."
+            "Inicializar el hardware antes de cargar el sistema operativo.",
+            "Instalar programas.",
+            "Crear documentos.",
+            "Navegar en internet."
         ],
         correct: ""
     },
     {
         question: "¿Qué es el middleware? (2 pts)",
         options: [
-            "( a ) 	Software que permite la comunicación entre aplicaciones y hardware.",
-            "( b )  Un tipo de malware.",
-            "( c )  Un driver de red",
-            "( d )  Un antivirus que nos proteje de los mediadores"
+            "Software que permite la comunicación entre aplicaciones y hardware.",
+            "Un tipo de malware.",
+            "Un driver de red",
+            "Un antivirus que nos proteje de los mediadores"
         ],
         correct: "Tipo malware."
     },
     {
         question: "¿Qué herramienta de Windows ayuda a identificar problemas de drivers? (2 pts)",
         options: [
-            "( a ) 	Visor de eventos",
-            "( b ) 	Bloc de notas",
-            "( c ) 	Antivirus",
-            "( d ) 	Calculadora"
+            "Visor de eventos",
+            "Bloc de notas",
+            "Antivirus",
+            "Calculadora"
         ],
         correct: "Visor de eventos"
     },
     {
         question: "¿Qué es una pantalla azul de la muerte (BSOD)? (2 pts)",
         options: [
-            "( a ) 	Un error crítico del sistema, a menudo causado por drivers defectuosos.",
-            "( b ) 	Un antivirus.",
-            "( c ) 	Un firewall.",
-            "( d ) 	Un driver de sonido que no funciona."
+            "Un error crítico del sistema, a menudo causado por drivers defectuosos.",
+            "Un antivirus.",
+            "Un firewall.",
+            "Un driver de sonido que no funciona."
         ],
         correct: "Un error crítico del sistema, a menudo causado por drivers defectuosos."
     },
     {
         question: "¿Cuál de las siguientes acciones mejora la seguridad informática? (2 pts)",
         options: [
-            "( a ) 	Actualizar el software y los drivers.",
-            "( b ) 	Compartir contraseñas.",
-            "( c ) 	Descargar de cualquier sitio.",
-            "( d ) 	Usar la misma contraseña en todos los servicios."
+            "Actualizar el software y los drivers.",
+            "Compartir contraseñas.",
+            "Descargar de cualquier sitio.",
+            "Usar la misma contraseña en todos los servicios."
         ],
         correct: "Actualizar el software y los drivers."
     },
     {
         question: "¿Qué hace Windows al detectar un nuevo dispositivo? (2 pts)",
         options: [
-            "( a ) 	Busca e instala el driver automáticamente si está disponible.",
-            "( b ) 	Elimina archivos.",
-            "( c ) 	Apaga el equipo.",
-            "( d ) 	Formatea el disco duro."
+            "Busca e instala el driver automáticamente si está disponible.",
+            "Elimina archivos.",
+            "Apaga el equipo.",
+            "Formatea el disco duro."
         ],
         correct: "Busca e instala el driver automáticomente si está disponible."
     },
     {
         question: "¿Cómo puedes restaurar un driver problemático? (2 pts)",
         options: [
-            "( a ) 	Volviendo a una versión anterior.",
-            "( b ) 	Desinstalando el sistema operativo.",
-            "( c ) 	Eliminando todos los archivos.",
-            "( d ) 	Reiniciando el router."
+            "Volviendo a una versión anterior.",
+            "Desinstalando el sistema operativo.",
+            "Eliminando todos los archivos.",
+            "Reiniciando el router."
         ],
         correct: "Volviendo a una versión anterior."
     },
     {
         question: "¿Qué es un driver de red? (2 pts)",
         options: [
-            "( a ) 	Permite la conexión a redes e internet.",
-            "( b ) 	Un tipo de malware.",
-            "( c ) 	Un firewall.",
-            "( d ) 	Un editor de audio."
+            "Permite la conexión a redes e internet.",
+            "Un tipo de malware.",
+            "Un firewall.",
+            "Un editor de audio."
         ],
         correct: "Permite la conexión a redes e internet."
     },
     {
         question: "¿Qué puede causar un error al instalar un driver? (2 pts)",
         options: [
-            "( a ) 	El dispositivo puede quedar inutilizable.",
-            "( b ) 	Mejorar el rendimiento.",
-            "( c ) 	Instalar un antivirus.",
-            "( d ) 	Aumentar la memoria RAM."
+            "El dispositivo puede quedar inutilizable.",
+            "Mejorar el rendimiento.",
+            "Instalar un antivirus.",
+            "Aumentar la memoria RAM."
         ],
         correct: "El dispositivo puede quedar inutilizable."
     },
     {
         question: "¿Qué es una actualización de driver? (2 pts)",
         options: [
-            "( a ) 	Instalar una versión más reciente para mejorar compatibilidad y seguridad.",
-            "( b ) 	Eliminar archivos del sistema operativo.",
-            "( c ) 	Cambiar la contraseña para evitar malos controladores.",
-            "( d ) 	Formatear el disco para que los controladores se instalen de nuevo."
+            "Instalar una versión más reciente para mejorar compatibilidad y seguridad.",
+            "Eliminar archivos del sistema operativo.",
+            "Cambiar la contraseña para evitar malos controladores.",
+            "Formatear el disco para que los controladores se instalen de nuevo."
         ],
         correct: "Instalar una versión más reciente para mejorar compatibilidad y seguridad."
     },
     {
         question: "¿Qué es un driver de sonido? (2 pts)",
         options: [
-            "( a ) 	Permite gestionar la entrada y salida de audio.",
-            "( b ) 	Un tipo de malware.",
-            "( c ) 	Un firewall.",
-            "( d ) 	Un editor de fotos."
+            "Permite gestionar la entrada y salida de audio.",
+            "Un tipo de malware.",
+            "Un firewall.",
+            "Un editor de fotos."
         ],
         correct: "Permite gestionar la entrada y salida de audio."
     },
     {
         question: "¿Qué es el software de virtualización? (2 pts)",
         options: [
-            "( a ) 	Permite crear y gestionar máquinas virtuales.",
-            "( b ) 	Un driver de impresora.",
-            "( c ) 	Un antivirus.",
-            "( d ) 	Un hardware externo."
+            "Permite crear y gestionar máquinas virtuales.",
+            "Un driver de impresora.",
+            "Un antivirus.",
+            "Un hardware externo."
         ],
         correct: "Permite crear y gestionar máquinas virtuales."
     },
     {
         question: "¿Qué puede provocar la pérdida de datos en un sistema? (2 pts)",
         options: [
-            "( a ) 	Malware y drivers defectuosos.",
-            "( b ) 	Actualizar el sistema.",
-            "( c ) 	Cambiar el mouse.",
-            "( d ) 	Instalar un firewall."
+            "Malware y drivers defectuosos.",
+            "Actualizar el sistema.",
+            "Cambiar el mouse.",
+            "Instalar un firewall."
         ],
         correct: "Malware y drivers defectuosos."
     },
@@ -2941,21 +2941,18 @@ let currentCrucigramaWord = null; // Para mantener la dirección de escritura
 // Datos para el pareo - Términos del examen
 const pareoDataComplete = {
     items: [
-        { palabra: "CPU", definicion: "Unidad central de procesamiento que ejecuta instrucciones" },
-        { palabra: "RAM", definicion: "Memoria volátil de acceso aleatorio" },
-        { palabra: "SSD", definicion: "Disco de estado sólido basado en memoria flash" },
-        { palabra: "GPU", definicion: "Unidad de procesamiento gráfico para imágenes" },
-        { palabra: "ROM", definicion: "Memoria no volátil con instrucciones de arranque" },
-        { palabra: "CACHE", definicion: "Memoria que acelera el acceso a datos recurrentes" },
-        { palabra: "VRAM", definicion: "Memoria de video en tarjetas gráficas" },
-        { palabra: "HDD", definicion: "Disco duro mecánico tradicional" },
-        { palabra: "BIOS", definicion: "Sistema básico de entrada y salida" },
-        { palabra: "USB", definicion: "Puerto universal en serie para dispositivos" },
-        { palabra: "WIFI", definicion: "Tecnología de red inalámbrica" },
-        { palabra: "FIREWALL", definicion: "Sistema de protección contra amenazas de red" },
-        { palabra: "MALWARE", definicion: "Software malicioso que daña sistemas" },
-        { palabra: "BACKUP", definicion: "Copia de seguridad de datos importantes" },
-        { palabra: "DRIVER", definicion: "Software que controla dispositivos de hardware" }
+        { palabra: "Chocolatey", definicion: "Admin de paquetes SO Windows, hay que instalarlo antes de usar, comando para utilizar es choco" },
+        { palabra: "Iwr", definicion: "Admin de paquetes SO Windows, hay que instalarlo antes de usar, este instala apps sin necesidad de permisos, comando para utilizar es scoop" },
+        { palabra: "Sudo", definicion: "Administrador de paquetes SO Linux, viene preinstalado, comando para utilizar es sudo" },
+        { palabra: "Bash", definicion: "Viene preinstalado, intérprete de comandos y un lenguaje de scripting que proporciona CLI en Linux" },
+        { palabra: "Cmd", definicion: "Command Prompt, intérprete de comandos y un lenguaje de scripting que proporciona CLI en Windows" },
+        { palabra: "Apt-Get", definicion: "Herramienta en línea de comandos usado en distribuciones base Linux para gestionar(Instalar, Actualizar o borrar) paquetes de software, se debe usar prefijo ya sea sudo, Iwr, etc en Bash" },
+        { palabra: "Driver", definicion: "Software que controla dispositivos de hardware" },
+        { palabra: "Firewall", definicion: "Sistema de protección contra amenazas de red" },
+        { palabra: "Antivirus", definicion: "Programa de software diseñado para detectar, prevenir y eliminar malware como Troyanos, gusanos, spyware y otras amenazas informáticas" },
+        { palabra: "Winget", definicion: "Administrador de paquetes de Windows, herramienta de línea de comandos oficial de Microsoft que permite instalar, actualizar y desinstalar paquetes de software" },
+        { palabra: "Seguridad Informática", definicion: "Conjunto de medidas y técnicas para proteger sistemas, redes y datos de amenazas digitales u organización de amenazas informáticas" },
+        { palabra: "Malware", definicion: "Cualquier software diseñado para dañar, explotar o interrumpir el funcionamiento de un dispositivo, redes o sistemas informáticos" },
     ]
 };
 
@@ -2982,6 +2979,7 @@ const crucigramaData = {
         { word: "MALWARE", clue: "Cualquier software diseñado para dañar, explotar o interrumpir dispositivos, redes o sistemas informáticos.", row: 10, col: 3, direction: "horizontal" },
         { word: "SISTEMA", clue: "Conjunto organizado de elementos que funcionan juntos para procesar, almacenar y transmitir información(Es lo que ataca cualquier virus).", row: 13, col: 7, direction: "horizontal" },
         // Verticales
+        { word: "ANTIVIRUS", clue: "Software diseñado para detectar, prevenir y eliminar malware.", row: 4, col: 1, direction: "vertical" },
         { word: "GUSANOS", clue: "Se replican automáticamente a través de redes sin necesidad de acción del usuario.", row: 7, col: 4, direction: "vertical" },
         { word: "TROYANOS", clue: "Se disfrazan de software legítimo para engañar a los usuarios y dar acceso a atacantes.", row: 6, col: 7, direction: "vertical" },
         { word: "RANSOMWARE", clue: "Secuestra datos o sistemas, los bloquea y exige un rescate para liberarlos y restaurar el acceso.", row: 1, col: 9, direction: "vertical" },
@@ -2993,30 +2991,35 @@ const crucigramaData = {
 
 // Palabras para la sopa de letras - Términos del examen con definiciones
 const sopaWordsComplete = [
-    { word: "CPU", definition: "Unidad central de procesamiento que ejecuta instrucciones" },
-    { word: "RAM", definition: "Memoria volátil de acceso aleatorio" },
-    { word: "SSD", definition: "Disco de estado sólido basado en memoria flash" },
-    { word: "GPU", definition: "Unidad de procesamiento gráfico para imágenes" },
-    { word: "USB", definition: "Puerto universal en serie para dispositivos" },
-    { word: "ROM", definition: "Memoria no volátil con instrucciones de arranque" },
-    { word: "HDD", definition: "Disco duro mecánico tradicional" },
-    { word: "WIFI", definition: "Tecnología de red inalámbrica" },
-    { word: "BIOS", definition: "Sistema básico de entrada y salida" },
-    { word: "CACHE", definition: "Memoria que acelera el acceso a datos recurrentes" },
+    { word: "USB", definition: "Puerto universal que uno debe escanear siempre al conectarlo a la PC ya que pueden traer malware" },
+    { word: "UNICAS", definition: "Nuestras contraseñas deben ser largas, complejas ... y seguras, dificiles de adivinar" },
     { word: "VIRUS", definition: "Software malicioso que se adjunta a archivos" },
-    { word: "BACKUP", definition: "Copia de seguridad de datos importantes" },
-    { word: "DRIVER", definition: "Software que controla dispositivos de hardware" },
-    { word: "KERNEL", definition: "Núcleo del sistema operativo" },
     { word: "FIREWALL", definition: "Sistema de protección contra amenazas de red" },
+    { word: "SISTEMA", definition: "Conjunto organizado de elementos que funcionan juntos, es lo que el virus ataca" },
+    { word: "COOKIES", definition: "Pequeños archivos que los sitios web guardan en tu navegador para recordar tus preferencias y mejorar tu experiencia, como iniciar sesión, guardar contenido que nos interesa entre otros." },
+    { word: "OFICIALES", definition: "Tipos de drivers que existen son 3: Sistema Operativo, Genericos y ..." },
+    { word: "HARDWARE", definition: "Los drivers son los qué permiten al software comunicarse con el ... de tu PC" },
+    { word: "INFORMACION", definition: "los drivers sirven para brindar ... de a que dispositivo comprende y para así enviar ordenes a un hardware" },
     { word: "MALWARE", definition: "Software malicioso que daña sistemas" },
-    { word: "HARDWARE", definition: "Componentes físicos de una computadora" },
+    { word: "DRIVER", definition: "Software que controla dispositivos de hardware" },
     { word: "SOFTWARE", definition: "Programas y conjuntos de instrucciones que permiten a las computadoras realizar tareas específicas (lo intangible de una PC)" },
-    { word: "MEMORIA", definition: "Es la que tiene capacidad para almacenar, retener y hacer disponible información" },
-    { word: "SISTEMA", definition: "Conjunto organizado de elementos que funcionan juntos" },
-    { word: "DATOS", definition: "Información procesada por una computadora" },
-    { word: "RED", definition: "Conexión entre múltiples dispositivos" },
-    { word: "SERVIDOR", definition: "Computadora que proporciona servicios a otras" },
-    { word: "CLIENTE", definition: "Dispositivo que solicita servicios a un servidor" }
+    /*
+        { word: "RAM", definition: "Memoria volátil de acceso aleatorio" },
+        { word: "SSD", definition: "Disco de estado sólido basado en memoria flash" },
+        { word: "GPU", definition: "Unidad de procesamiento gráfico para imágenes" },
+        { word: "ROM", definition: "Memoria no volátil con instrucciones de arranque" },
+        { word: "HDD", definition: "Disco duro mecánico tradicional" },
+        { word: "WIFI", definition: "Tecnología de red inalámbrica" },
+        { word: "BIOS", definition: "Sistema básico de entrada y salida" },
+        { word: "CACHE", definition: "Memoria que acelera el acceso a datos recurrentes" },
+        { word: "BACKUP", definition: "Copia de seguridad de datos importantes" },
+        { word: "KERNEL", definition: "Núcleo del sistema operativo" },
+        { word: "MEMORIA", definition: "Es la que tiene capacidad para almacenar, retener y hacer disponible información" },
+        { word: "DATOS", definition: "Información procesada por una computadora" },
+        { word: "RED", definition: "Conexión entre múltiples dispositivos" },
+        { word: "SERVIDOR", definition: "Computadora que proporciona servicios a otras" },
+        { word: "CLIENTE", definition: "Dispositivo que solicita servicios a un servidor" }
+         */
 ];
 
 // Función para generar sopa de letras aleatoria
