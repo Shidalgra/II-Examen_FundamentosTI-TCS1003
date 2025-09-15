@@ -3003,23 +3003,8 @@ const sopaWordsComplete = [
     { word: "MALWARE", definition: "Software malicioso que daña sistemas" },
     { word: "DRIVER", definition: "Software que controla dispositivos de hardware" },
     { word: "SOFTWARE", definition: "Programas y conjuntos de instrucciones que permiten a las computadoras realizar tareas específicas (lo intangible de una PC)" },
-    /*
-        { word: "RAM", definition: "Memoria volátil de acceso aleatorio" },
-        { word: "SSD", definition: "Disco de estado sólido basado en memoria flash" },
-        { word: "GPU", definition: "Unidad de procesamiento gráfico para imágenes" },
-        { word: "ROM", definition: "Memoria no volátil con instrucciones de arranque" },
-        { word: "HDD", definition: "Disco duro mecánico tradicional" },
-        { word: "WIFI", definition: "Tecnología de red inalámbrica" },
-        { word: "BIOS", definition: "Sistema básico de entrada y salida" },
-        { word: "CACHE", definition: "Memoria que acelera el acceso a datos recurrentes" },
-        { word: "BACKUP", definition: "Copia de seguridad de datos importantes" },
-        { word: "KERNEL", definition: "Núcleo del sistema operativo" },
-        { word: "MEMORIA", definition: "Es la que tiene capacidad para almacenar, retener y hacer disponible información" },
-        { word: "DATOS", definition: "Información procesada por una computadora" },
-        { word: "RED", definition: "Conexión entre múltiples dispositivos" },
-        { word: "SERVIDOR", definition: "Computadora que proporciona servicios a otras" },
-        { word: "CLIENTE", definition: "Dispositivo que solicita servicios a un servidor" }
-         */
+    { word: "SISTEMA", definition: "Conjunto organizado de elementos que funcionan juntos" },
+
 ];
 
 // Función para generar sopa de letras aleatoria
