@@ -10,12 +10,12 @@ const ADMIN_PASSWORD = "Shoudymella1986*"; //Contraseña para borrar los datos d
 const MAX_CLEAR_USES = 1; // Cambia a 2 o 3 si deseas permitir más usos
 const CLEAR_INTERVAL_DAYS = 1; // Tiempo en días de espera para poder borrar los datos
 
-const MAX_ATTEMPTS = 10; // Intentos
-const UNIQUE_QUESTIONS_COUNT = 23; // 23 Selección única
-const DEVELOPMENT_QUESTIONS_COUNT = 8; // 8 Desarrollo
-const PRACTICE_QUESTIONS_PAREO = 10; // 10 Pareo
-const PRACTICE_QUESTIONS_SOUP = 10; // 10 SOUP
-const ACCESS_CODE = "2"; // 12345 Código que se valida en script.js
+const MAX_ATTEMPTS = 3; // Intentos
+const UNIQUE_QUESTIONS_COUNT = 27; // 27 Selección única 2puntos
+const DEVELOPMENT_QUESTIONS_COUNT = 10; // 10 Desarrollo 3puntos
+const PRACTICE_QUESTIONS_PAREO = 10; // 10 Pareo 4puntos
+const PRACTICE_QUESTIONS_SOUP = 10; // 10 SOUP 5puntos
+const ACCESS_CODE = "F1003"; // 12345 Código que se valida en script.js
 /////////////////////////////////
 
 //////////////////////////////////
