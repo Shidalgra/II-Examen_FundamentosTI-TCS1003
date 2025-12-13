@@ -15,7 +15,7 @@ const UNIQUE_QUESTIONS_COUNT = 27; // 27 Selección única 2puntos
 const DEVELOPMENT_QUESTIONS_COUNT = 10; // 10 Desarrollo 3puntos
 const PRACTICE_QUESTIONS_PAREO = 10; // 10 Pareo 4puntos
 const PRACTICE_QUESTIONS_SOUP = 10; // 10 SOUP 5puntos
-const ACCESS_CODE = "FTI1003"; // 12345 Código que se valida en script.js
+const ACCESS_CODE = "Shoudy"; // 12345 Código que se valida en script.js
 /////////////////////////////////
 
 //////////////////////////////////
@@ -2061,7 +2061,7 @@ const uniqueQuestions = [
             "Crear documentos.",
             "Navegar en internet."
         ],
-        correct: ""
+        correct: "Inicializar el hardware antes de cargar el sistema operativo."
     },
     {
         question: "¿Qué es el middleware? (2 pts)",
@@ -2071,7 +2071,7 @@ const uniqueQuestions = [
             "Un driver de red",
             "Un antivirus que nos proteje de los mediadores"
         ],
-        correct: "Tipo malware."
+        correct: "Un tipo de malware."
     },
     {
         question: "¿Qué herramienta de Windows ayuda a identificar problemas de drivers? (2 pts)",
