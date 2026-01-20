@@ -11,10 +11,11 @@ const MAX_CLEAR_USES = 1; // Cambia a 2 o 3 si deseas permitir más usos
 const CLEAR_INTERVAL_DAYS = 1; // Tiempo en días de espera para poder borrar los datos
 
 const MAX_ATTEMPTS = 3; // Intentos
-const UNIQUE_QUESTIONS_COUNT = 27; // 27 Selección única 2puntos
-const DEVELOPMENT_QUESTIONS_COUNT = 10; // 10 Desarrollo 3puntos
-const PRACTICE_QUESTIONS_PAREO = 10; // 10 Pareo 4puntos
-const PRACTICE_QUESTIONS_SOUP = 10; // 10 SOUP 5puntos
+const UNIQUE_QUESTIONS_COUNT = 23; // 23 Selección única 2puntos
+const DEVELOPMENT_QUESTIONS_COUNT = 15; // 15x2 = 30pts 
+const PRACTICE_QUESTIONS_PAREO = 14; // 14x0.5 = 7pts
+                        //Crucigrama // 11x3 = 33pts
+const PRACTICE_QUESTIONS_SOUP = 14; // 14.0.5 7pts
 const ACCESS_CODE = "Shoudy"; // 12345 Código que se valida en script.js
 /////////////////////////////////
 
@@ -1270,18 +1271,21 @@ dateElement.textContent = `Fecha: ${formattedDate}`;
 //PreguntasDesarrollo.js
 /////////////////////////////////
 const preguntasDesarrolloCompletas = [
-    "Explica con tus palabras qué es un driver y por qué es esencial para el funcionamiento de una computadora. Menciona dos consecuencias de no tenerlos actualizados. (3pts)",
-    "Menciona y describe tres tipos de drivers, dando un ejemplo concreto de cada uno. (3pts)",
-    "Explica tres problemas que pueden surgir por no actualizar los drivers de una computadora y como afectan al usuario. (3pts)",
-    "Detalla el proceso para instalar un driver en Windows desde tres fuentes diferentes (sitio web oficial, Windows Update, y disco/USB del fabricante) (3pts)",
-    "¿Por qué es importante mantener el software y los drivers actualizados en términos de seguridad informática? Da dos ejemplos de amenazas que pueden evitarse. (3pts)",
-    "Define malware y menciona cuatro tipos distintos, explicando brevemente cómo afecta cada uno al usuario o sistema. (3pts)",
-    "Enumera tres medidas de seguridad que tomarías antes de abrir archivos de un USB desconocido. (3pts)",
-    "Explica qué es el phishing y menciona tres señales para identificar un correo sospechoso. (3pts)",
-    "Describe el papel del firewall en la seguridad informática y de un ejemplo de cómo protege una red doméstica en la actualidad. (3pts)",
-    "¿Qué es una pantalla azul de la muerte (BSOD) y cómo puede estar relacionada con los drivers? Explica dos causas posibles. (3pts)",
-    "Menciona por qué debemos protegernos como usuarios de las amenazas de malware, y cuales serían 3 tipos de soluciones. (3pts)",
-    "Como usuario, como puedo configurar mi navegador web, para que sea más seguro y evitar que violen mi privacidad. (3pts)",
+    "Explica con tus palabras qué es un driver y por qué es esencial para el funcionamiento de una computadora. Menciona dos consecuencias de no tenerlos actualizados. (2pts)",
+    "Menciona y describe tres tipos de drivers, dando un ejemplo concreto de cada uno. (2pts)",
+    "Explica tres problemas que pueden surgir por no actualizar los drivers de una computadora y como afectan al usuario. (2pts)",
+    "Detalla el proceso para instalar un driver en Windows desde tres fuentes diferentes (sitio web oficial, Windows Update, y disco/USB del fabricante) (2pts)",
+    "¿Por qué es importante mantener el software y los drivers actualizados en términos de seguridad informática? Da dos ejemplos de amenazas que pueden evitarse. (2pts)",
+    "Define malware y menciona cuatro tipos distintos, explicando brevemente cómo afecta cada uno al usuario o sistema. (2pts)",
+    "Enumera tres medidas de seguridad que tomarías antes de abrir archivos de un USB desconocido. (2pts)",
+    "Explica qué es el phishing y menciona tres señales para identificar un correo sospechoso. (2pts)",
+    "Describe el papel del firewall en la seguridad informática y de un ejemplo de cómo protege una red doméstica en la actualidad. (2pts)",
+    "¿Qué es una pantalla azul de la muerte (BSOD) y cómo puede estar relacionada con los drivers? Explica dos causas posibles. (2pts)",
+    "Menciona por qué debemos protegernos como usuarios de las amenazas de malware, y cuales serían 3 tipos de soluciones. (2pts)",
+    "Como usuario, ¿Como puedo configurar mi navegador web, para que sea más seguro y evitar que violen mi privacidad?. (2pts)",
+    "¿Para que sirve el archivo Hosts en nuetro sistema operativo? explique. (2pts)",
+    "¿Que es nslookup y donde se usa?. (2pts)",
+    "¿Qué es y para que sirve la dirección 127.0.0.1 y por qué se usa en el archivo Hosts?. (2pts)",
 ];
 
 // Función para seleccionar preguntas únicas aleatorias 
@@ -2953,6 +2957,9 @@ const pareoDataComplete = {
         { palabra: "Winget", definicion: "Administrador de paquetes de Windows, herramienta de línea de comandos oficial de Microsoft que permite instalar, actualizar y desinstalar paquetes de software" },
         { palabra: "Seguridad Informática", definicion: "Conjunto de medidas y técnicas para proteger sistemas, redes y datos de amenazas digitales u organización de amenazas informáticas" },
         { palabra: "Malware", definicion: "Cualquier software diseñado para dañar, explotar o interrumpir el funcionamiento de un dispositivo, redes o sistemas informáticos" },
+        { palabra: "Hosts", definicion: "Archivo de texto plano del sistema operativo que sirve para mapear nombres de dominio a direcciones IP de forma manual" },
+        { palabra: "nslookup", definicion: "herramienta de comandos utilizada para consultar servidores DNS y verificar la resolución de nombres de dominio" },
+        { palabra: "Loopback", definicion: "dirección estándar de bucle de retorno = 127.0.0.1 que es la dirección de red" },
     ]
 };
 
@@ -3004,6 +3011,9 @@ const sopaWordsComplete = [
     { word: "DRIVER", definition: "Software que controla dispositivos de hardware" },
     { word: "SOFTWARE", definition: "Programas y conjuntos de instrucciones que permiten a las computadoras realizar tareas específicas (lo intangible de una PC)" },
     { word: "SISTEMA", definition: "Conjunto organizado de elementos que funcionan juntos" },
+    { word: "HOSTS", definition: "Archivo de texto local en el sistema operativo que traduce nombres de dominio a direcciones IP su Uso: Bloquear sitios web o redireccionar dominios manualmente" },
+    { word: "LOOPBACK", definition: "Interfaz de red virtual que se utiliza para que una computadora se comunique consigo misma" },
+    { word: "NSLOOKUP", definition: "herramienta de comandos (CLI) utilizada para consultar directamente a los servidores DNS su Uso: Diagnóstico de red y auditoría de servidores de nombres." },
 
 ];
 
