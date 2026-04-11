@@ -11,7 +11,8 @@ const MAX_CLEAR_USES = 1; // Cambia a 2 o 3 si deseas permitir más usos
 const CLEAR_INTERVAL_DAYS = 1; // Tiempo en días de espera para poder borrar los datos
 
 const MAX_ATTEMPTS = 3; // Intentos
-const UNIQUE_QUESTIONS_COUNT = 23; // 23 Selección única 2puntos
+const UNIQUE_QUESTIONS_COUNT = 23; // 23 Selección única 1puntos = 23pts
+const UNIQUE_QUESTIONS_VALUE = "1 PTS";
 const DEVELOPMENT_QUESTIONS_COUNT = 15; // 15x2 = 30pts 
 const PRACTICE_QUESTIONS_PAREO = 14; // 14x0.5 = 7pts
                         //Crucigrama // 11x3 = 33pts
@@ -1788,7 +1789,7 @@ let studentAnswers = [];
 
 const uniqueQuestions = [
     {
-        question: "¿Cuál es la función de un controlador (driver) en un sistema informático? (2 pts)",
+        question: `¿Cuál es la función de un controlador (driver) en un sistema informático? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Mejorar la velocidad de internet.",
             "Permitir que el hardware y el software interactúen correctamente.",
@@ -1798,7 +1799,7 @@ const uniqueQuestions = [
         correct: "Permitir que el hardware y el software interactúen correctamente."
     },
     {
-        question: "¿Si tu impresora no responde al intentar imprimir, ¿cuál podría ser una causa relacionada con los drivers? (2 pts)",
+        question: `¿Si tu impresora no responde al intentar imprimir, ¿cuál podría ser una causa relacionada con los drivers? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "El documento es demasiado grande.",
             "El driver de la impresora está ausente o dañado.",
@@ -1808,7 +1809,7 @@ const uniqueQuestions = [
         correct: "El driver de la impresora está ausente o dañado."
     },
     {
-        question: "¿Qué sucede si instalas un driver equivocado para tu tarjeta de video? (2 pts)",
+        question: `¿Qué sucede si instalas un driver equivocado para tu tarjeta de video? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "El sistema operativo se actualiza automáticamente.",
             "Puede haber errores gráficos o fallos del sistema.",
@@ -1818,7 +1819,7 @@ const uniqueQuestions = [
         correct: "Puede haber errores gráficos o fallos del sistema."
     },
     {
-        question: "¿Cuál de los siguientes dispositivos requiere instalación de drivers que no sean genéricos para funcionar plenamente? (2 pts)",
+        question: `¿Cuál de los siguientes dispositivos requiere instalación de drivers que no sean genéricos para funcionar plenamente? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Ratón USB.",
             "Monitor estándar.",
@@ -1828,7 +1829,7 @@ const uniqueQuestions = [
         correct: "Tarjeta de sonido dedicada."
     },
     {
-        question: "¿Qué es un driver oficial? (2 pts)",
+        question: `¿Qué es un driver oficial? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Un controlador desarrollado por el fabricante del hardware.",
             "Un programa hecho por usuarios.",
@@ -1838,7 +1839,7 @@ const uniqueQuestions = [
         correct: "Un controlador desarrollado por el fabricante del hardware."
     },
     {
-        question: "¿Cuál es una característica de los drivers genéricos? (2 pts)",
+        question: `¿Cuál es una característica de los drivers genéricos? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Son exclusivos para un solo modelo.",
             "Funcionan con varios dispositivos similares, pero no siempre aprovechan todas las funciones.",
@@ -1848,7 +1849,7 @@ const uniqueQuestions = [
         correct: "Funcionan con varios dispositivos similares, pero no siempre aprovechan todas las funciones."
     },
     {
-        question: "¿Qué herramienta de Windows permite desinstalar un driver defectuoso? (2 pts)",
+        question: `¿Qué herramienta de Windows permite desinstalar un driver defectuoso? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Panel de control de energía.",
             "Administrador de dispositivos.",
@@ -1858,7 +1859,7 @@ const uniqueQuestions = [
         correct: "Administrador de dispositivos."
     },
     {
-        question: "¿Qué puede pasar si dos drivers intentan controlar el mismo recurso de hardware? (2 pts)",
+        question: `¿Qué puede pasar si dos drivers intentan controlar el mismo recurso de hardware? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "El equipo será menos rápido.",
             "Puede haber conflictos y fallos del sistema.",
@@ -1868,7 +1869,7 @@ const uniqueQuestions = [
         correct: "Puede haber conflictos y fallos del sistema."
     },
     {
-        question: "¿Cuál es una forma común de instalar drivers en Windows? (2 pts)",
+        question: `¿Cuál es una forma común de instalar drivers en Windows? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Por correo electrónico.",
             "Al conectar el dispositivo, Windows busca e instala el driver automáticamente.",
@@ -1878,7 +1879,7 @@ const uniqueQuestions = [
         correct: "Al conectar el dispositivo, Windows busca e instala el driver automáticamente."
     },
     {
-        question: "¿Qué es el malware? (2 pts)",
+        question: `¿Qué es el malware? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Un programa que daña o roba información.",
             "Un tipo de hardware mailicioso.",
@@ -1888,7 +1889,7 @@ const uniqueQuestions = [
         correct: "Un programa que daña o roba información."
     },
     {
-        question: "¿Cuál es una buena práctica al instalar software descargado de internet? (2 pts)",
+        question: `¿Cuál es una buena práctica al instalar software descargado de internet? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Instalar cualquier archivo sin revisar su origen.",
             "Descargar solo desde sitios oficiales o confiables.",
@@ -1898,7 +1899,7 @@ const uniqueQuestions = [
         correct: "Descargar solo desde sitios oficiales o confiables."
     },
     {
-        question: "¿Qué técnica usan los ciberdelincuentes para engañar a los usuarios y obtener información personal? (2 pts)",
+        question: `¿Qué técnica usan los ciberdelincuentes para engañar a los usuarios y obtener información personal? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Phishing",
             "un Firewall",
@@ -1908,7 +1909,7 @@ const uniqueQuestions = [
         correct: "Phishing"
     },
     {
-        question: "¿Cuál es la función principal de un firewall? (2 pts)",
+        question: `¿Cuál es la función principal de un firewall? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Bloquear accesos no autorizados a la red o sistema.",
             "Mejorar la velocidad de la computadora.",
@@ -1918,7 +1919,7 @@ const uniqueQuestions = [
         correct: "Bloquear accesos no autorizados a la red o sistema."
     },
     {
-        question: "¿Por qué es riesgoso usar la misma contraseña en varios servicios? (2 pts)",
+        question: `¿Por qué es riesgoso usar la misma contraseña en varios servicios? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Porque es difícil de recordar.",
             "Si una contraseña es robada, todas las cuentas pueden ser vulneradas.",
@@ -1928,7 +1929,7 @@ const uniqueQuestions = [
         correct: "Si una contraseña es robada, todas las cuentas pueden ser vulneradas."
     },
     {
-        question: "¿Qué sistema de autenticación es más seguro? (2 pts)",
+        question: `¿Qué sistema de autenticación es más seguro? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Solo contraseña",
             "Doble factor de autenticación (2FA)",
@@ -1938,7 +1939,7 @@ const uniqueQuestions = [
         correct: "Doble factor de autenticación (2FA)"
     },
     {
-        question: "¿Por qué no es recomendable conectar USB desconocidos a la computadora? (2 pts)",
+        question: `¿Por qué no es recomendable conectar USB desconocidos a la computadora? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Pueden contener malware.",
             "Mejoran el rendimiento.",
@@ -1948,7 +1949,7 @@ const uniqueQuestions = [
         correct: "Pueden contener malware."
     },
     {
-        question: "¿Cuál es la función de un antivirus? (2 pts)",
+        question: `¿Cuál es la función de un antivirus? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Detectar y eliminar software malicioso.",
             "Instalar drivers.",
@@ -1958,7 +1959,7 @@ const uniqueQuestions = [
         correct: "Detectar y eliminar software malicioso."
     },
     {
-        question: "¿Qué es un spyware? (2 pts)",
+        question: `¿Qué es un spyware? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Un programa que recopila información sin permiso.",
             "Un driver de sonido.",
@@ -1968,7 +1969,7 @@ const uniqueQuestions = [
         correct: "Un programa que recopila información sin permiso."
     },
     {
-        question: "¿Cuál de las siguientes es una contraseña segura? (2 pts)",
+        question: `¿Cuál de las siguientes es una contraseña segura? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "123456",
             "MiNombre2024",
@@ -1978,7 +1979,7 @@ const uniqueQuestions = [
         correct: "!Qw3rT$9pL##"
     },
     {
-        question: "¿Qué puede provocar un driver corrupto? (2 pts)",
+        question: `¿Qué puede provocar un driver corrupto? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Mejorar el rendimiento.",
             "Pantallas azules y errores del sistema.",
@@ -1988,7 +1989,7 @@ const uniqueQuestions = [
         correct: "Pantallas azules y errores del sistema."
     },
     {
-        question: "¿Para qué sirve el Administrador de dispositivos en Windows? (2 pts)",
+        question: `¿Para qué sirve el Administrador de dispositivos en Windows? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Gestionar hardware y drivers instalados.",
             "Escribir textos.",
@@ -1998,7 +1999,7 @@ const uniqueQuestions = [
         correct: "Gestionar hardware y drivers instalados."
     },
     {
-        question: "¿Qué es un driver genérico? (2 pts)",
+        question: `¿Qué es un driver genérico? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Un controlador que puede funcionar con varios dispositivos, pero no es específico.",
             "Un virus.",
@@ -2008,7 +2009,7 @@ const uniqueQuestions = [
         correct: "Un controlador que puede funcionar con varios dispositivos, pero no es específico."
     },
     {
-        question: "¿Qué sucede si instalas un driver incompatible con tu sistema operativo? (2 pts)",
+        question: `¿Qué sucede si instalas un driver incompatible con tu sistema operativo? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "El equipo funcionará igual.",
             "Puede dejar de funcionar el dispositivo o causar errores.",
@@ -2018,7 +2019,7 @@ const uniqueQuestions = [
         correct: "Puede dejar de funcionar el dispositivo o causar errores."
     },
     {
-        question: "¿Qué es un driver oficial? (2 pts)",
+        question: `¿Qué es un driver oficial? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "El que proviene del fabricante del hardware.",
             "Un programa hecho por terceros.",
@@ -2028,7 +2029,7 @@ const uniqueQuestions = [
         correct: "El que proviene del fabricante del hardware."
     },
     {
-        question: "¿Cuál de los siguientes NO es un tipo de malware? (2 pts)",
+        question: `¿Cuál de los siguientes NO es un tipo de malware? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Ransomware",
             "Firewall",
@@ -2038,7 +2039,7 @@ const uniqueQuestions = [
         correct: "Firewall"
     },
     {
-        question: "¿Qué es un troyano? (2 pts)",
+        question: `¿Qué es un troyano? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Un malware que se oculta como software legítimo.",
             "Un driver de video desconocido.",
@@ -2048,7 +2049,7 @@ const uniqueQuestions = [
         correct: "Un malware que se oculta como software legítimo."
     },
     {
-        question: "¿Qué hace el ransomware? (2 pts)",
+        question: `¿Qué hace el ransomware? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Cifra archivos y exige un pago para liberarlos.",
             "Mejora el rendimiento del equipo.",
@@ -2058,7 +2059,7 @@ const uniqueQuestions = [
         correct: "Cifra archivos y exige un pago para liberarlos."
     },
     {
-        question: "¿Cuál es la función del BIOS o firmware? (2 pts)",
+        question: `¿Cuál es la función del BIOS o firmware? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Inicializar el hardware antes de cargar el sistema operativo.",
             "Instalar programas.",
@@ -2068,7 +2069,7 @@ const uniqueQuestions = [
         correct: "Inicializar el hardware antes de cargar el sistema operativo."
     },
     {
-        question: "¿Qué es el middleware? (2 pts)",
+        question: `¿Qué es el middleware? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Software que permite la comunicación entre aplicaciones y hardware.",
             "Un tipo de malware.",
@@ -2078,7 +2079,7 @@ const uniqueQuestions = [
         correct: "Un tipo de malware."
     },
     {
-        question: "¿Qué herramienta de Windows ayuda a identificar problemas de drivers? (2 pts)",
+        question: `¿Qué herramienta de Windows ayuda a identificar problemas de drivers? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Visor de eventos",
             "Bloc de notas",
@@ -2088,7 +2089,7 @@ const uniqueQuestions = [
         correct: "Visor de eventos"
     },
     {
-        question: "¿Qué es una pantalla azul de la muerte (BSOD)? (2 pts)",
+        question: `¿Qué es una pantalla azul de la muerte (BSOD)? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Un error crítico del sistema, a menudo causado por drivers defectuosos.",
             "Un antivirus.",
@@ -2098,7 +2099,7 @@ const uniqueQuestions = [
         correct: "Un error crítico del sistema, a menudo causado por drivers defectuosos."
     },
     {
-        question: "¿Cuál de las siguientes acciones mejora la seguridad informática? (2 pts)",
+        question: `¿Cuál de las siguientes acciones mejora la seguridad informática? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Actualizar el software y los drivers.",
             "Compartir contraseñas.",
@@ -2108,7 +2109,7 @@ const uniqueQuestions = [
         correct: "Actualizar el software y los drivers."
     },
     {
-        question: "¿Qué hace Windows al detectar un nuevo dispositivo? (2 pts)",
+        question: `¿Qué hace Windows al detectar un nuevo dispositivo? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Busca e instala el driver automáticamente si está disponible.",
             "Elimina archivos.",
@@ -2118,7 +2119,7 @@ const uniqueQuestions = [
         correct: "Busca e instala el driver automáticomente si está disponible."
     },
     {
-        question: "¿Cómo puedes restaurar un driver problemático? (2 pts)",
+        question: `¿Cómo puedes restaurar un driver problemático? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Volviendo a una versión anterior.",
             "Desinstalando el sistema operativo.",
@@ -2128,7 +2129,7 @@ const uniqueQuestions = [
         correct: "Volviendo a una versión anterior."
     },
     {
-        question: "¿Qué es un driver de red? (2 pts)",
+        question: `¿Qué es un driver de red? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Permite la conexión a redes e internet.",
             "Un tipo de malware.",
@@ -2138,7 +2139,7 @@ const uniqueQuestions = [
         correct: "Permite la conexión a redes e internet."
     },
     {
-        question: "¿Qué puede causar un error al instalar un driver? (2 pts)",
+        question: `¿Qué puede causar un error al instalar un driver? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "El dispositivo puede quedar inutilizable.",
             "Mejorar el rendimiento.",
@@ -2148,7 +2149,7 @@ const uniqueQuestions = [
         correct: "El dispositivo puede quedar inutilizable."
     },
     {
-        question: "¿Qué es una actualización de driver? (2 pts)",
+        question: `¿Qué es una actualización de driver? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Instalar una versión más reciente para mejorar compatibilidad y seguridad.",
             "Eliminar archivos del sistema operativo.",
@@ -2158,7 +2159,7 @@ const uniqueQuestions = [
         correct: "Instalar una versión más reciente para mejorar compatibilidad y seguridad."
     },
     {
-        question: "¿Qué es un driver de sonido? (2 pts)",
+        question: `¿Qué es un driver de sonido? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Permite gestionar la entrada y salida de audio.",
             "Un tipo de malware.",
@@ -2168,7 +2169,7 @@ const uniqueQuestions = [
         correct: "Permite gestionar la entrada y salida de audio."
     },
     {
-        question: "¿Qué es el software de virtualización? (2 pts)",
+        question: `¿Qué es el software de virtualización? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Permite crear y gestionar máquinas virtuales.",
             "Un driver de impresora.",
@@ -2178,7 +2179,7 @@ const uniqueQuestions = [
         correct: "Permite crear y gestionar máquinas virtuales."
     },
     {
-        question: "¿Qué puede provocar la pérdida de datos en un sistema? (2 pts)",
+        question: `¿Qué puede provocar la pérdida de datos en un sistema? ${UNIQUE_QUESTIONS_VALUE}`,
         options: [
             "Malware y drivers defectuosos.",
             "Actualizar el sistema.",
