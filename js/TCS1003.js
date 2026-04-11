@@ -13,11 +13,12 @@ const CLEAR_INTERVAL_DAYS = 1; // Tiempo en días de espera para poder borrar lo
 const MAX_ATTEMPTS = 3; // Intentos
 const UNIQUE_QUESTIONS_COUNT = 23; // 23 Selección única 1puntos = 23pts
 const UNIQUE_QUESTIONS_VALUE = "1 PTS";
-const DEVELOPMENT_QUESTIONS_COUNT = 15; // 15x2 = 30pts 
+const DEVELOPMENT_QUESTIONS_COUNT = 15; // 15x2 = 30pts
+const DEVELOPMENT_QUESTIONS_VALUE = "2 PTS"; 
 const PRACTICE_QUESTIONS_PAREO = 14; // 14x0.5 = 7pts
                         //Crucigrama // 11x3 = 33pts
 const PRACTICE_QUESTIONS_SOUP = 14; // 14.0.5 7pts
-const ACCESS_CODE = "Shoudy"; // 12345 Código que se valida en script.js
+const ACCESS_CODE = "Manitas"; // 12345 Código que se valida en script.js
 /////////////////////////////////
 
 //////////////////////////////////
@@ -1272,21 +1273,21 @@ dateElement.textContent = `Fecha: ${formattedDate}`;
 //PreguntasDesarrollo.js
 /////////////////////////////////
 const preguntasDesarrolloCompletas = [
-    "Explica con tus palabras qué es un driver y por qué es esencial para el funcionamiento de una computadora. Menciona dos consecuencias de no tenerlos actualizados. (2pts)",
-    "Menciona y describe tres tipos de drivers, dando un ejemplo concreto de cada uno. (2pts)",
-    "Explica tres problemas que pueden surgir por no actualizar los drivers de una computadora y como afectan al usuario. (2pts)",
-    "Detalla el proceso para instalar un driver en Windows desde tres fuentes diferentes (sitio web oficial, Windows Update, y disco/USB del fabricante) (2pts)",
-    "¿Por qué es importante mantener el software y los drivers actualizados en términos de seguridad informática? Da dos ejemplos de amenazas que pueden evitarse. (2pts)",
-    "Define malware y menciona cuatro tipos distintos, explicando brevemente cómo afecta cada uno al usuario o sistema. (2pts)",
-    "Enumera tres medidas de seguridad que tomarías antes de abrir archivos de un USB desconocido. (2pts)",
-    "Explica qué es el phishing y menciona tres señales para identificar un correo sospechoso. (2pts)",
-    "Describe el papel del firewall en la seguridad informática y de un ejemplo de cómo protege una red doméstica en la actualidad. (2pts)",
-    "¿Qué es una pantalla azul de la muerte (BSOD) y cómo puede estar relacionada con los drivers? Explica dos causas posibles. (2pts)",
-    "Menciona por qué debemos protegernos como usuarios de las amenazas de malware, y cuales serían 3 tipos de soluciones. (2pts)",
-    "Como usuario, ¿Como puedo configurar mi navegador web, para que sea más seguro y evitar que violen mi privacidad?. (2pts)",
-    "¿Para que sirve el archivo Hosts en nuetro sistema operativo? explique. (2pts)",
-    "¿Que es nslookup y donde se usa?. (2pts)",
-    "¿Qué es y para que sirve la dirección 127.0.0.1 y por qué se usa en el archivo Hosts?. (2pts)",
+    `Explica con tus palabras qué es un driver y por qué es esencial para el funcionamiento de una computadora. Menciona dos consecuencias de no tenerlos actualizados. ${DEVELOPMENT_QUESTIONS_VALUE}`,
+    `Menciona y describe tres tipos de drivers, dando un ejemplo concreto de cada uno. ${DEVELOPMENT_QUESTIONS_VALUE}`,
+    `Explica tres problemas que pueden surgir por no actualizar los drivers de una computadora y como afectan al usuario. ${DEVELOPMENT_QUESTIONS_VALUE}`,
+    `Detalla el proceso para instalar un driver en Windows desde tres fuentes diferentes (sitio web oficial, Windows Update, y disco/USB del fabricante) ${DEVELOPMENT_QUESTIONS_VALUE}`,
+    `¿Por qué es importante mantener el software y los drivers actualizados en términos de seguridad informática? Da dos ejemplos de amenazas que pueden evitarse. ${DEVELOPMENT_QUESTIONS_VALUE}`,
+    `Define malware y menciona cuatro tipos distintos, explicando brevemente cómo afecta cada uno al usuario o sistema. ${DEVELOPMENT_QUESTIONS_VALUE}`,
+    `Enumera tres medidas de seguridad que tomarías antes de abrir archivos de un USB desconocido. ${DEVELOPMENT_QUESTIONS_VALUE}`,
+    `Explica qué es el phishing y menciona tres señales para identificar un correo sospechoso. ${DEVELOPMENT_QUESTIONS_VALUE}`,
+    `Describe el papel del firewall en la seguridad informática y de un ejemplo de cómo protege una red doméstica en la actualidad. ${DEVELOPMENT_QUESTIONS_VALUE}`,
+    `¿Qué es una pantalla azul de la muerte (BSOD) y cómo puede estar relacionada con los drivers? Explica dos causas posibles. ${DEVELOPMENT_QUESTIONS_VALUE}`,
+    `Menciona por qué debemos protegernos como usuarios de las amenazas de malware, y cuales serían 3 tipos de soluciones. ${DEVELOPMENT_QUESTIONS_VALUE}`,
+    `Como usuario, ¿Como puedo configurar mi navegador web, para que sea más seguro y evitar que violen mi privacidad?. ${DEVELOPMENT_QUESTIONS_VALUE}`,
+    `¿Para que sirve el archivo Hosts en nuetro sistema operativo? explique. ${DEVELOPMENT_QUESTIONS_VALUE}`,
+    `¿Que es nslookup y donde se usa?. ${DEVELOPMENT_QUESTIONS_VALUE}`,
+    `¿Qué es y para que sirve la dirección 127.0.0.1 y por qué se usa en el archivo Hosts?. ${DEVELOPMENT_QUESTIONS_VALUE}`,
 ];
 
 // Función para seleccionar preguntas únicas aleatorias 
