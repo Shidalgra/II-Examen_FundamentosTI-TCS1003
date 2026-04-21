@@ -2077,7 +2077,7 @@ const uniqueQuestions = [
             "Un driver de red",
             "Un antivirus que nos proteje de los mediadores"
         ],
-        correct: "Un tipo de malware."
+        correct: "Software que permite la comunicación entre aplicaciones y hardware."
     },
     {
         question: `¿Qué herramienta de Windows ayuda a identificar problemas de drivers? ${UNIQUE_QUESTIONS_VALUE}`,
