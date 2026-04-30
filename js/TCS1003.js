@@ -18,7 +18,7 @@ const DEVELOPMENT_QUESTIONS_VALUE = "2 PTS";
 const PRACTICE_QUESTIONS_PAREO = 14; // 14x0.5 = 7pts
                         //Crucigrama // 11x3 = 33pts
 const PRACTICE_QUESTIONS_SOUP = 14; // 14.0.5 7pts
-const ACCESS_CODE = "Manitas sucias"; // 12345 Código que se valida en script.js
+const ACCESS_CODE = "ExamenDeLaProstata"; // 12345 Código que se valida en script.js
 /////////////////////////////////
 
 //////////////////////////////////
