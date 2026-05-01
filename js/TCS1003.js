@@ -2756,7 +2756,7 @@ function renderHTMLToPDF(doc, htmlContent, startY, maxWidth = 170) {
 }
 
 document.getElementById("btnGenerarPDF").addEventListener("click", function () {
-    const reumenNombre = document.getElementById("studentName").value.trim();
+    const resumenNombre = document.getElementById("studentName").value.trim();
     const { jsPDF } = window.jspdf;
     const doc = new jsPDF();
     let y = 20;
@@ -2931,7 +2931,7 @@ document.getElementById("btnGenerarPDF").addEventListener("click", function () {
     }
 
     // Guardar el PDF
-    doc.save(`resumen_examen_${reumenNombre}.pdf`);
+    doc.save(`resumen_examen_${resumenNombre}.pdf`);
 });
 ///////////////////////////////////////////////////
 
