@@ -18,7 +18,7 @@ const DEVELOPMENT_QUESTIONS_VALUE = "2 PTS";
 const PRACTICE_QUESTIONS_PAREO = 14; // 14x0.5 = 7pts
                         //Crucigrama // 11x3 = 33pts
 const PRACTICE_QUESTIONS_SOUP = 14; // 14.0.5 7pts
-const ACCESS_CODE = "ExamenDeLaProstata"; // 12345 Código que se valida en script.js
+const ACCESS_CODE = "Examen"; // 12345 Código que se valida en script.js
 /////////////////////////////////
 
 //////////////////////////////////
@@ -2756,6 +2756,7 @@ function renderHTMLToPDF(doc, htmlContent, startY, maxWidth = 170) {
 }
 
 document.getElementById("btnGenerarPDF").addEventListener("click", function () {
+    const reumenNombre = document.getElementById("studentName").value.trim();
     const { jsPDF } = window.jspdf;
     const doc = new jsPDF();
     let y = 20;
@@ -2930,7 +2931,7 @@ document.getElementById("btnGenerarPDF").addEventListener("click", function () {
     }
 
     // Guardar el PDF
-    doc.save("resumen_examen.pdf");
+    doc.save(`resumen_examen_${reumenNombre}.pdf`);
 });
 ///////////////////////////////////////////////////
 
